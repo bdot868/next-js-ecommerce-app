@@ -94,7 +94,14 @@ const singleproduct = ({ product }) => {
 							explicabo facere laboriosam eius.
 						</p>
 					</div>
-					<button className="btn">Add to cart 🛒</button>
+          <button
+            className="btn snipcart-add-item"
+            data-item-id={product.id}
+            data-item-price={product.price}
+            data-item-url={`products/${product.slug}`}
+            data-item-image={product.image.url}
+            data-item-name={product.name}
+          >Add to cart 🛒</button>
 				</div>
 			</div>
 		</>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/components/Header.module.css';
+import styles from '../styles/components/Navbar.module.css';
 const Header = () => {
   return (
     <nav className={styles.navbar}>
@@ -10,9 +10,9 @@ const Header = () => {
             </p>
           </div>
       </Link>
-      <div className={styles.nav_price}>
+      <div className="nav-price snipcart-checkout">
         <span>🛒</span>
-        <p>$0.00</p>
+        <p className="snipcart-total-price">$0.00</p>
       </div>
     </nav>
   );
